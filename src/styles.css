@@ -36,6 +36,7 @@ nav #nav-settings:hover {
 
 #content {
     display: flex;
+    flex-direction: column;
 }
 
 .runner {
@@ -46,4 +47,37 @@ nav #nav-settings:hover {
 
 .runner-name {
     text-align: center;
+}
+
+.progress-bar {
+    display: flex;
+    justify-content: center;
+    margin: 1rem;
+}
+
+.progress-segment.empty {
+    justify-content: center;
+    background-color: black;
+    height: 100px;
+    width: 200px;
+}
+
+.progress-segment.full {
+    justify-content: center;
+    background-color: green;
+    height: 100px;
+    width: 200px;
+}
+
+#race-button {
+    margin: 1rem;
+}
+
+#updates {
+    text-align: center;
+}
+
+#race-button {
+    display: flex;
+    justify-self: center;
 }

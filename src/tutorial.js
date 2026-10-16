@@ -14,11 +14,13 @@ runnersArr.push(runnerX);
 runnersArr.push(runnerY);
 runnersArr.push(runnerZ);
 
-for (let runner of runnersArr) {
-    const div =  document.createElement("div");
-    div.id = displayRunner(runner.id, runnersArr, div);
-    div.classList.add("runner");
-    content.append(div);
+function displayRunners() {
+    for (let runner of runnersArr) {
+        const div =  document.createElement("div");
+        div.id = displayRunner(runner.id, runnersArr, div);
+        div.classList.add("runner");
+        content.append(div);
+    }
 }
 
 export { runnersArr }
