@@ -1,0 +1,49 @@
+body {
+    background-color: antiquewhite;
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: end;
+    gap: 1rem;
+    background-color: saddlebrown;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    border-bottom: 2px solid black;
+}
+
+nav #nav-title {
+    margin-right: auto;
+}
+
+nav #nav-title,
+nav #nav-runners,
+nav #nav-races,
+nav #nav-settings {
+    padding: 1rem;
+}
+
+nav #nav-title:hover,
+nav #nav-runners:hover,
+nav #nav-races:hover,
+nav #nav-settings:hover {
+    cursor: pointer;
+    background-color: burlywood;
+}
+
+#content {
+    display: flex;
+}
+
+.runner {
+    margin: 1rem;
+    border: 2px solid black;
+    padding: 1rem;
+}
+
+.runner-name {
+    text-align: center;
+}
